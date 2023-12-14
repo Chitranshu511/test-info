@@ -1,0 +1,2 @@
+[app]
+localmachine ansible_connection=local

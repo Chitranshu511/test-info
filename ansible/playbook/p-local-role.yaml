@@ -1,0 +1,9 @@
+---
+  - name: "Playing with Ansible and Git"
+    hosts: all 
+    roles:
+      #- { role: roles/test }
+      # - { role: roles/java }
+      # - { role: roles/tomcat }
+       - { role: roles/jenkins }
+      # - { role: roles/nginx }

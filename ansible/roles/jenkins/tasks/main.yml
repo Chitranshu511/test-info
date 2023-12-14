@@ -1,0 +1,12 @@
+---
+- name: Download Jenkins war file
+  get_url:
+    url: "https://updates.jenkins.io/war/{{ jenkins_version }}/jenkins.war"
+    dest: "/opt/tomcat/webapps/jenkins.war"
+  become: yes
+
+- name: Start Tomcat
+  service:
+    name: tomcat
+    state: started
+  become: yes
